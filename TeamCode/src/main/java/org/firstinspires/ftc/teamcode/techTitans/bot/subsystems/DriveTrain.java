@@ -13,9 +13,7 @@ public class DriveTrain {
         brMotor = hwMap.get(DcMotor.class, "brMotor");
         blMotor = hwMap.get(DcMotor.class, "blMotor");
 
-        // Change these depending on the bot,
-        // if a wheel rotates the wrong way, change that motors direction to REVERSE
-        // Ask gleb if you need
+        // TODO: Set motor directions
         frMotor.setDirection(DcMotor.Direction.FORWARD);
         flMotor.setDirection(DcMotor.Direction.FORWARD);
         brMotor.setDirection(DcMotor.Direction.FORWARD);
