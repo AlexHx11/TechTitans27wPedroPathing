@@ -24,6 +24,22 @@ public class Main extends OpMode {
         // Drive Train (x, y, turn)
         bot.driveTrain.setDrivePower(gamepad1.left_stick_x, -gamepad1.left_stick_y, gamepad1.right_stick_x);
 
+        // intake
+        if (gamepad2.left_trigger_pressed) {
+            bot.intake.turnIntakeOn();
+        } else if (gamepad1.left_bumper) {
+            bot.intake.turnOuttakeOn();
+        } else {
+            bot.intake.turnIntakeOff();
+        }
+
+        // shooter
+        if (gamepad2.right_trigger_pressed) {
+            bot.shooter.turnShooterOn();
+        } else {
+            bot.shooter.turnShooterOff();
+        }
+
         // Update the bot and its state
         bot.update();
     }

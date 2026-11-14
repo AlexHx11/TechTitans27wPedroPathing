@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode.techTitans.bot.subsystems;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 public class DriveTrain {
@@ -14,9 +15,9 @@ public class DriveTrain {
         blMotor = hwMap.get(DcMotor.class, "blMotor");
 
         // TODO: Set motor directions
-        frMotor.setDirection(DcMotor.Direction.FORWARD);
+        frMotor.setDirection(DcMotor.Direction.REVERSE);
         flMotor.setDirection(DcMotor.Direction.FORWARD);
-        brMotor.setDirection(DcMotor.Direction.FORWARD);
+        brMotor.setDirection(DcMotor.Direction.REVERSE);
         blMotor.setDirection(DcMotor.Direction.FORWARD);
     }
 
