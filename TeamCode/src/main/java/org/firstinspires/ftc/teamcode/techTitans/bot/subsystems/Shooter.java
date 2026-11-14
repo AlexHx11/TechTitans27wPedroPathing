@@ -22,7 +22,7 @@ public class Shooter {
     public Shooter(HardwareMap hwMap) {
         shooterMotor = hwMap.get(DcMotorEx.class, "shooterMotor");
 
-        shooterMotor.setDirection(DcMotorSimple.Direction.REVERSE);
+        shooterMotor.setDirection(DcMotorSimple.Direction.FORWARD);
     }
 
     // setter methods

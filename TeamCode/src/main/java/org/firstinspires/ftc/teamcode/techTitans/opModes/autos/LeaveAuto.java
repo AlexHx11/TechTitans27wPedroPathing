@@ -54,8 +54,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
-@Autonomous(name="lil move not bad", group="Robot")
-@Disabled
+@Autonomous(name="lil move not bad")
 public class LeaveAuto extends LinearOpMode {
 
     private final ElapsedTime runtime = new ElapsedTime();
