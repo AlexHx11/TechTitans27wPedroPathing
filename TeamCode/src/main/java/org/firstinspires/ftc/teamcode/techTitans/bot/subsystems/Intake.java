@@ -23,7 +23,7 @@ public class Intake {
     public Intake(HardwareMap hwMap) {
         intakeMotor = hwMap.get(DcMotorEx.class, "intakeMotor");
 
-        intakeMotor.setDirection(DcMotorSimple.Direction.FORWARD);
+        intakeMotor.setDirection(DcMotorSimple.Direction.REVERSE);
     }
 
     // Setters
